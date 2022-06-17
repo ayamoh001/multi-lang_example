@@ -1,7 +1,10 @@
 <?php
-$content=[
+$title=[
+    "ar"=>"محمد",
+    "en"=>"Mohamed"
+];
+$home=[
     "ar"=>[
-        "title"=>"محمد",
         "hero"=>"",
         "featuers"=>"",
         "portfolio"=>"",
@@ -13,7 +16,6 @@ $content=[
         "ploicies"=>""
         ],
     "en"=>[
-        "title"=>"Mohamed",
         "hero"=>"",
         "featuers"=>"",
         "portfolio"=>"",

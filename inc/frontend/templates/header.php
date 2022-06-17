@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assests/css/sass/style_<?php echo $lang?>.css">
-    <title><?php echo $content[$lang]["title"] ?></title>
+    <title><?php echo $title[$lang] ?></title>
 </head>
 
 <body>

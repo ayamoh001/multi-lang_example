@@ -226,7 +226,7 @@ include "../inc/frontend/templates/header.php";
                     <figcaption><i class="">An Icon</i></figcaption>
                 </figur>
             </section>
-            <form class="col" action="" method="POST">
+            <form class="col" action="../inc/backend/form.php" method="POST">
                 <div>
                     <div class="input-group flex-nowrap">
                         <input type="text" class="form-control" placeholder="First name" aria-label="First name" aria-describedby="addon-wrapping">
