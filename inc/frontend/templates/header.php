@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo $lang ?>" dir="<?php if($lang=="ar"){echo "ltr";}else{echo "rtl";}?>">
+<html lang="<?php echo $lang ?>" dir="<?php if($lang=="ar"){echo "rtl";}else{echo "ltr";}?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,8 +17,8 @@
     
     <link rel="icon" href="...">
 
-    <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assests/css/sass/style_<?php echo $lang?>.css">
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/sass/style_<?php echo $lang?>.css">
     <title><?php echo $title[$lang] ?></title>
 </head>
 

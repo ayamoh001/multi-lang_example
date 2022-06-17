@@ -1,29 +1,32 @@
 <?php
 $title=[
-    "ar"=>"محمد",
-    "en"=>"Mohamed"
+    "ar"=>"محمد أياو | مصمم مواقع",
+    "en"=>"Mohamed Ayaou | Web/Graphic Designer"
 ];
-$home=[
-    "ar"=>[
-        "hero"=>"",
-        "featuers"=>"",
-        "portfolio"=>"",
-        "services"=>"",
-        "rates"=>"",
-        "contact"=>"",
-        "about"=>"",
-        "blog"=>"",
-        "ploicies"=>""
+$content = [
+    "ar" => [
+        "hero" => [
+            
         ],
-    "en"=>[
-        "hero"=>"",
-        "featuers"=>"",
-        "portfolio"=>"",
-        "services"=>"",
-        "rates"=>"",
-        "contact"=>"",
-        "about"=>"",
-        "blog"=>"",
-        "ploicies"=>""
+        "featuers" => "",
+        "portfolio" => "",
+        "services" => "",
+        "rates" => "",
+        "contact" => "",
+        "about" => "",
+        "blog" => "",
+        "ploicies" => ""
+    ],
+    "en" => [
+        "hero" => "",
+        "featuers" => "",
+        "portfolio" => "",
+        "services" => "",
+        "rates" => "",
+        "contact" => "",
+        "about" => "",
+        "blog" => "",
+        "ploicies" => ""
     ]
 ];
+
