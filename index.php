@@ -6,6 +6,9 @@ $lang=$_COOKIES["lang"];
 
 include "./inc/frontend/languages/home_lang.php";
 
+include "./inc/backend/conn.php";
+include "./inc/backend/form.php";
+
 include "./inc/frontend/templates/header.php"
 ?>
 
@@ -162,6 +165,13 @@ include "./inc/frontend/templates/header.php"
 <article>
     <div class="container">
         <div class="row">
+            <?php
+                $rates=mysqli_query($conn,"SELECT * FROM rates");
+                $rates=mysqli_fetch_all($rates);
+                foreach($rates as $rate){
+                    print_r( $rate);
+                }
+            ?>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <div>
@@ -227,25 +237,29 @@ include "./inc/frontend/templates/header.php"
                     <figcaption><i class="">An Icon</i></figcaption>
                 </figur>
             </section>
-            <form class="col" action="" method="POST">
+            <form class="col" action="./" method="POST">
                 <div>
                     <div class="input-group flex-nowrap">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" aria-describedby="addon-wrapping">
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" aria-describedby="addon-wrapping">
+                        <input name="name" type="text" class="form-control" placeholder="Your name" aria-label="Your name" aria-describedby="addon-wrapping">
+                        <input name="phone" type="text" class="form-control" placeholder="Phone number(optional)" aria-label="Phone number(optional)" aria-describedby="addon-wrapping">
                     </div>
-                    <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="addon-wrapping">
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="1">Creat design</option>
-                        <option value="2">Coding</option>
-                        <option value="3">Securing</option>
-                        <option value="3">Custom</option>
+                    <?php echo $errors["name"] . $errors["phone"]; ?>
+                    <input name="email" type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="addon-wrapping">
+                    <?php echo $errors["email"]; ?>
+                    <select name="option" class="form-select" id="inputGroupSelect01">
+                        <option selected value="Creat design">Creat design</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Securing">Securing</option>
+                        <option value="Custom">Custom</option>
                     </select>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Message...</label>
+                        <textarea name="message" class="form-control" placeholder="Leave a comment here" id="Textarea" style="height: 100px"></textarea>
+                        <label for="Textarea">Message...</label>
+                        <?php echo $errors["message"]; ?>
                     </div>
+                    <input name="send" class="btn btn-dark" type="submit">
                 </div>
+
             </form>
         </div>
     </div>
@@ -297,4 +311,7 @@ include "./inc/frontend/templates/header.php"
  </div>
 </article>
 
-<?php include "./inc/frontend/templates/footer.php"; ?>
+<?php 
+include "./inc/frontend/templates/footer.php";
+include "./inc/backend/close.php";
+?>
