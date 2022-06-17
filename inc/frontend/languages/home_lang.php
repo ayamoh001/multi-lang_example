@@ -1,0 +1,27 @@
+<?php
+$content=[
+    "ar"=>[
+        "title"=>"محمد",
+        "hero"=>"",
+        "featuers"=>"",
+        "portfolio"=>"",
+        "services"=>"",
+        "rates"=>"",
+        "contact"=>"",
+        "about"=>"",
+        "blog"=>"",
+        "ploicies"=>""
+        ],
+    "en"=>[
+        "title"=>"Mohamed",
+        "hero"=>"",
+        "featuers"=>"",
+        "portfolio"=>"",
+        "services"=>"",
+        "rates"=>"",
+        "contact"=>"",
+        "about"=>"",
+        "blog"=>"",
+        "ploicies"=>""
+    ]
+];
