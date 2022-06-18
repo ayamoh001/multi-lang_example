@@ -25,9 +25,9 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">MAWEB</a>
+            <a class="navbar-brand text-primary fw-bold" href="#">MAWEB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,11 +35,11 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <?php foreach($header[$lang][0] as $nav): ?>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><?php echo $nav ?></a>
+                    <a class="nav-link px-3" aria-current="page" href="#"><?php echo $nav ?></a>
                     </li>
                 <?php endforeach ?>
             </ul>
-            <button class="btn btn-outline-success" type="submit"><?php echo $header[$lang][1] ?></button>
+            <button class="btn btn-dark text-light" type="submit"><?php echo $header[$lang][1] ?></button>
             </div>
         </div>
     </nav>

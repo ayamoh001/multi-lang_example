@@ -155,47 +155,47 @@ $content = [
         "featuers" => [
             "What is special?",
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
             [
-                "one.png",
+                "ui-ux.png",
                 "UI/UX",
                 "A clear and modern designe with the academic ui/ux's rules."
             ],
