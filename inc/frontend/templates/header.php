@@ -1,3 +1,4 @@
+<?php include "./inc/frontend/languages/static_lang.php" ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang ?>" dir="<?php if($lang=="ar"){echo "rtl";}else{echo "ltr";}?>">
 <head>
@@ -23,3 +24,23 @@
 </head>
 
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MAWEB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <?php foreach($header[$lang][0] as $nav): ?>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><?php echo $nav ?></a>
+                    </li>
+                <?php endforeach ?>
+            </ul>
+            <button class="btn btn-outline-success" type="submit"><?php echo $header[$lang][1] ?></button>
+            </div>
+        </div>
+    </nav>
+</header>
