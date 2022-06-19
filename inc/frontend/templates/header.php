@@ -27,19 +27,19 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand text-primary fw-bold" href="#">MAWEB</a>
+            <a class="navbar-brand text-dark fw-bold" href="#">MAWEB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <?php foreach($header[$lang][0] as $nav): ?>
-                    <li class="nav-item">
-                    <a class="nav-link px-3" aria-current="page" href="#"><?php echo $nav ?></a>
-                    </li>
-                <?php endforeach ?>
-            </ul>
-            <button class="btn btn-dark text-light" type="submit"><?php echo $header[$lang][1] ?></button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav my-auto mb-2 mb-lg-0">
+                    <?php foreach($header[$lang][0] as $nav): ?>
+                        <li class="nav-item">
+                        <a class="nav-link px-3" aria-current="page" href="#"><?php echo $nav ?></a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+                <button class="btn btn-dark text-light px-4" type="submit"><?php echo $header[$lang][1] ?></button>
             </div>
         </div>
     </nav>

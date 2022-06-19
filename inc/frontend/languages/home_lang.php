@@ -17,73 +17,75 @@ $content = [
         "featuers" => [
             "ما المميز؟",
             [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
-            [
-                "one.png",
-                "تصميم متوافق",
-                "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
-            ],
+                [
+                    "seo.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "security_001.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "review.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "speed.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "licens.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "responsive.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "ai.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "contract.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ],
+                [
+                    "security_002.png",
+                    "تصميم متوافق",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                ]
+            ]
         ],
         "portfolio" => [
             "أعمالي",
             [
-                "one.png",
+                "test.svg",
                 "نبذة عن المشروع",
                 "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
                 "زيارة/معاينة"
             ],
             [
-                "one.png",
+                "test.svg",
                 "نبذة عن المشروع",
                 "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
                 "زيارة/معاينة"
             ],
             [
-                "one.png",
+                "test.svg",
                 "نبذة عن المشروع",
                 "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
                 "زيارة/معاينة"
             ],
             [
-                "one.png",
+                "test.svg",
                 "نبذة عن المشروع",
                 "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
                 "زيارة/معاينة"
@@ -127,7 +129,19 @@ $content = [
                 ],
                 "الرسالة",
                 "ارسال"
+            ],
+            [
+                "twitter.png",
+                "telegram.png",
+                "facebook.png",
+                "whatsapp.png",
+                "instagram.png",
+                "behance.png",
+                "youtube.png",
+                "messanger.png",
+                "pentrist.png"
             ]
+
         ],
         "about" => [
             "حولي",
@@ -155,73 +169,75 @@ $content = [
         "featuers" => [
             "What is special?",
             [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
-            [
-                "ui-ux.png",
-                "UI/UX",
-                "A clear and modern designe with the academic ui/ux's rules."
-            ],
+                [
+                    "seo.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "speed.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "responsive.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "security_001.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "security_002.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "contract.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "consulting.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "ai.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ],
+                [
+                    "review.png",
+                    "UI/UX",
+                    "A clear and modern designe with the academic ui/ux's rules."
+                ]
+            ]
         ],
         "portfolio" => [
             "My Portfolio",
             [
-                "one.png",
+                "test.svg",
                 "About The Project",
                 "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
                 "Visit/Preview"
             ],
             [
-                "one.png",
+                "test.svg",
                 "About The Project",
                 "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
                 "Visit/Preview"
             ],
             [
-                "one.png",
+                "test.svg",
                 "About The Project",
                 "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
                 "Visit/Preview"
             ],
             [
-                "one.png",
+                "test.svg",
                 "About The Project",
                 "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
                 "Visit/Preview"
@@ -230,19 +246,19 @@ $content = [
         "services" => [
             "Services",
             [
-                "one.png",
+                "designing.png",
                 "Designing",
                 "Desinging and palnning the sturcture of the site with all of it visual identity.",
                 "100$"
             ],
             [
-                "one.png",
+                "coding.webp",
                 "Developing",
                 "Converting the graphical design to a real interactive website.",
                 "100$"
             ],
             [
-                "one.png",
+                "securing.jpg",
                 "securing",
                 "Securing your website from more than 12+ web attacks",
                 "100$"
@@ -265,6 +281,17 @@ $content = [
                 ],
                 "The Message",
                 "Send"
+            ],
+            [
+                "twitter.png",
+                "telegram.png",
+                "facebook.png",
+                "whatsapp.png",
+                "instagram.png",
+                "behance.png",
+                "youtube.png",
+                "messanger.png",
+                "pentrist.png"
             ]
         ],
         "about" => [
