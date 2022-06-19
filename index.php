@@ -25,8 +25,8 @@ include "./inc/frontend/templates/header.php"
                 <h1 class="display-2 fw-bold lh-1 mb-3"><?php echo $content[$lang]["hero"][0] ?></h1>
                 <p class="lead"><?php echo $content[$lang]["hero"][1] ?></p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-dark btn-lg px-5 me-md-2"><?php echo $content[$lang]["hero"][2] ?></button>
-                <button type="button" class="btn btn-outline-dark btn-lg px-5"><?php echo $content[$lang]["hero"][3] ?></button>
+                <button type="button" class="btn btn-dark btn-lg px-5 me-md-2 fw-bold text-uppercase"><?php echo $content[$lang]["hero"][2] ?></button>
+                <button type="button" class="btn btn-outline-dark btn-lg px-5 fw-bold text-uppercase"><?php echo $content[$lang]["hero"][3] ?></button>
                 </div>
             </section>
         </div>
@@ -34,17 +34,17 @@ include "./inc/frontend/templates/header.php"
 </article>
 
 <article>
-    <div class="container px-4 py-5" id="hanging-icons">
+    <div class="container px-4 pb-5" id="hanging-icons">
         <h2 class="pb-2 display-3 fw-bold text-center"><?php echo $content[$lang]["featuers"][0] ?></h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <?php foreach($content[$lang]["featuers"][1] as $featuer): ?>
                 <div class="col d-flex align-items-start">
-                    <div class="w-25 me-3">
-                        <div class="p-2 rounded-circle border border-dark border-4">
-                        	<img  src="./assests/images/icons/<?php echo $featuer[0] ?>">
+                    <div class="w-25">
+                        <div class="p-1 rounded-circle border border-dark border-4">
+                        	<img class="w-100" src="./assests/images/icons/<?php echo $featuer[0] ?>">
                         </div>
                     </div>
-                    <div>
+                    <div class="ms-3 w-75">
                         <h2><?php echo $featuer[1] ?></h2>
                         <p><?php echo $featuer[2] ?></p>
                     </div>
@@ -108,9 +108,9 @@ include "./inc/frontend/templates/header.php"
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
             <?php for($i = 1;$i<count($content[$lang]["services"]);$i++): ?>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <img src="./assests/images/services/<?php echo $content[$lang]["services"][$i][0] ?>" alt="">
-                        <div class="card-body">
+                    <div class="card mb-4 rounded-3 h-100 shadow-sm">
+                        <img class="h-100" src="./assests/images/services/<?php echo $content[$lang]["services"][$i][0] ?>" alt="">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h1 class="card-title pricing-card-title"><?php echo $content[$lang]["services"][$i][1] ?></small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                             <p><?php echo $content[$lang]["services"][$i][2] ?></p>
@@ -231,9 +231,9 @@ include "./inc/frontend/templates/header.php"
 <article>
 	<div class="container">
 		<h2 class="h1 text-center my-5"><?php echo $content[$lang]["policies"][0] ?></h2>
-		<div class="container row">
-			<figure class="col"><img width="250px" src="./assests/images/phone/Device.png" alt="..."></figure>
-			<div class="col">
+		<div class="container d-flex flex-row justify-content-center">
+			<figure class=""><img width="250px" src="./assests/images/phone/Device.png" alt="..."></figure>
+			<div class="w-50">
 				<p><?php echo $content[$lang]["policies"][1][0] ?></p>
 				<ul>
 					<li><?php echo $content[$lang]["policies"][1][1] ?></li>
