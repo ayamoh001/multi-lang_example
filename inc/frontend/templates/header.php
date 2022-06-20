@@ -18,7 +18,7 @@
     
     <link rel="icon" href="...">
 
-    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/bootstrap<?php echo ($lang=="ar") ? ".rtl" : "" ;?>.min.css">
     <link rel="stylesheet" href="./assests/css/sass/style_<?php echo $lang?>.css">
     <title><?php echo $title[$lang] ?></title>
 </head>
@@ -39,7 +39,7 @@
                         </li>
                     <?php endforeach ?>
                 </ul>
-                <button class="btn btn-dark text-light px-4" type="submit"><?php echo $header[$lang][1] ?></button>
+                <form action="./" method="POST"><button class="btn btn-dark text-light px-4" name="change-lang" type="submit" value="<?php echo ($lang=="en") ? "ar": "en" ; ?>"><?php echo $header[$lang][1] ?></button></form>
             </div>
         </div>
     </nav>
