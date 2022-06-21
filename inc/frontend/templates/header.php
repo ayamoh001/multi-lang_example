@@ -18,8 +18,8 @@
     
     <link rel="icon" href="./assests/images/logo_icons/192.png">
 
-    <link rel="stylesheet" href="./assests/css/bootstrap<?php echo ($lang=="ar") ? ".rtl" : "" ;?>.min.css">
-    <link rel="stylesheet" href="./assests/css/sass/style_<?php echo $lang?>.css">
+    <link rel="stylesheet" href="./assests/css/main<?php echo ($lang=="ar") ? ".rtl" : "" ;?>.min.css">
+    <!-- <link rel="stylesheet" href="./assests/css/sass/style_<?php echo $lang?>.css"> -->
     <title><?php echo $title[$lang] ?></title>
 </head>
 
