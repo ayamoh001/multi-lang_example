@@ -10,7 +10,7 @@
                 </div>
 
                 <?php foreach($footer[$lang][1] as $section): ?>
-                    <div class="col-md-2 col-12 border-start text-center">
+                    <div class="col-md-2 col-12 border-start border-secondary text-center text-md-start">
                         <h5 class="text-light"><?php echo $section[0] ?></h5>
                         <ul class="nav flex-column ">
                             <?php foreach($section[1] as $navlink): ?>
@@ -20,7 +20,7 @@
                     </div>
                 <?php endforeach ?>
             </div>
-            <div class="text-light d-flex text-center text-md-start flex-column flex-md-row w-100 justify-content-between mt-4 border-top">
+            <div class="text-light d-flex text-center text-md-start flex-column flex-md-row w-100 justify-content-between mt-4 border-top border-secondary">
                 <p class="my-3">© 2021 Company, Inc. All rights reserved.</p>
                 <p class="my-3">Terms & Condition's Agreement</p>
             </div>

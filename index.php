@@ -23,9 +23,9 @@ include "./inc/frontend/templates/header.php"
                     <img src="./assests/images/me/me.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </figure>
             </section>
-            <section class="col-lg-6">
-                <h1 class="display-2 fw-bold lh-1 mb-3"><?php echo $content[$lang]["hero"][0] ?></h1>
-                <p class="lead py-3"><?php echo $content[$lang]["hero"][1] ?></p>
+            <section class="col-lg-6 my-0">
+                <h1 class="display-2 fw-bold lh-1 mb-3 text-sm-start text-center"><?php echo $content[$lang]["hero"][0] ?></h1>
+                <p class="lead py-3 text-sm-start text-center"><?php echo $content[$lang]["hero"][1] ?></p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-dark btn-lg px-5 me-md-2 fw-bold text-uppercase"><?php echo $content[$lang]["hero"][2] ?></button>
                 <button type="button" class="btn btn-outline-dark border-2 btn-lg px-5 fw-bold text-uppercase"><?php echo $content[$lang]["hero"][3] ?></button>
@@ -59,49 +59,48 @@ include "./inc/frontend/templates/header.php"
 
 <article> 
     <div class="container mb-5">
-        <h2 class="text-center mb-4 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <?php for($i = 1;$i<count($content[$lang]["portfolio"]);$i++): ?>
-                    <figcaption class="carousel-item text-center <?php if($i==1){echo "active";}?>">
-                        <img style="height: 400px;" class="bg-dark w-100" src="./assests/images/portfolio/<?php echo $content[$lang]["portfolio"][$i][0] ?>" class="d-block w-100" alt="...">
-                        <div class="my-3">
-                            <h3><?php echo $content[$lang]["portfolio"][$i][1] ?></h3>
-                            <p><?php echo $content[$lang]["portfolio"][$i][2] ?></p>
-                            <button class="btn btn-outline-dark"><?php echo $content[$lang]["portfolio"][$i][3] ?></button>
-                        </div>
-                    </figcaption>
-                <?php endfor ?>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- <figure id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner w-100 bg-dark">
-                <?php for($i = 1;$i<count($content[$lang]["portfolio"]);$i++): ?>
-                    <figcaption class="carousel-item h-100">
-                        <img src="./assests/images/portfolio/<?php echo $content[$lang]["portfolio"][$i][0] ?>" class="d-block h-100 w-100" alt="...">
-                        <h3><?php echo $content[$lang]["portfolio"][$i][1] ?></h3>
-                        <p><?php echo $content[$lang]["portfolio"][$i][2] ?></p>
-                        <button><?php echo $content[$lang]["portfolio"][$i][3] ?></button>
-                    </figcaption>
-                    
-                <?php endfor ?>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-        </figure> -->
-    </div>
+        <h2 class="text-center  mb-4 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
+		<div class="bg-dark p-4">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<?php for($i = 1;$i<count($content[$lang]["portfolio"]);$i++): ?>
+						<figcaption class="carousel-item text-center <?php if($i==1){echo "active";}?>">
+							<img style="height: 400px;" class="bg-dark w-100" src="./assests/images/portfolio/<?php echo $content[$lang]["portfolio"][$i][0] ?>" class="d-block w-100" alt="...">
+							<!-- <div class="my-3">
+								<h3><?php echo $content[$lang]["portfolio"][$i][1] ?></h3>
+								<p><?php echo $content[$lang]["portfolio"][$i][2] ?></p>
+								<button class="btn btn-outline-dark"><?php echo $content[$lang]["portfolio"][$i][3] ?></button>
+							</div> -->
+						</figcaption>
+					<?php endfor ?>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+				</div>
+				<div class="carousel-indicators position-relative m-0">
+					<?php for($i = 1;$i<count($content[$lang]["portfolio"]);$i++): ?>
+						<div class="ratio ratio-1x1 mx-2">
+							<img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?php echo $i-1 ?>" class="<?php if($i==1){echo "active";}?> h-100 w-100" aria-current="<?php if($i==1){echo "true";}?>" aria-label="Slide <?php echo $i?>" src="./assests/images/portfolio/<?php echo $content[$lang]["portfolio"][$i][0] ?>">
+						</div>
+					<?php endfor ?>
+				</div>
+				
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
 </article>
 
 <article>
