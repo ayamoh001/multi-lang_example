@@ -1,10 +1,11 @@
 // Variable overrides second
-$dark: #e65a3f;
-$light: #1d1d20;
-$body-color: #f6f4f4;
-
-
-
-
-// Include all of bootstrap
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// $headings-margin-bottom:      $spacer * .5;
+// $headings-font-family:        roboto;
+// $headings-font-style:         regular;
+// $headings-font-weight:        500;
+// $headings-line-height:        1.2;
+// $headings-color:              null;
+// // Include all of bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
