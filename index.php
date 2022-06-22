@@ -16,7 +16,7 @@ include "./inc/frontend/templates/header.php"
 ?>
 
 <article>
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-8 px-4">
         <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
             <section class="col-10 col-sm-10 col-lg-6">
                 <figure>
@@ -24,8 +24,8 @@ include "./inc/frontend/templates/header.php"
                 </figure>
             </section>
             <section class="col-lg-6 my-0">
-                <h1 class="display-2 fw-bold lh-1 mb-3 text-sm-start text-center"><?php echo $content[$lang]["hero"][0] ?></h1>
-                <p class="lead py-3 text-sm-start text-center"><?php echo $content[$lang]["hero"][1] ?></p>
+                <h1 class="display-2 fw-bold lh-1 mb-3 text-md-start text-center"><?php echo $content[$lang]["hero"][0] ?></h1>
+                <p class="lead py-3 text-md-start text-center"><?php echo $content[$lang]["hero"][1] ?></p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-dark btn-lg px-5 me-md-2 fw-bold text-uppercase"><?php echo $content[$lang]["hero"][2] ?></button>
                 <button type="button" class="btn btn-outline-dark border-2 btn-lg px-5 fw-bold text-uppercase"><?php echo $content[$lang]["hero"][3] ?></button>
@@ -36,32 +36,37 @@ include "./inc/frontend/templates/header.php"
 </article>
 
 <article>
-    <div class="container px-4 pb-5" id="hanging-icons">
-        <h2 class="pb-2 display-5 fw-bold text-uppercase fw-bold text-center"><?php echo $content[$lang]["featuers"][0] ?></h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <?php foreach($content[$lang]["featuers"][1] as $featuer): ?>
-                <div class="col d-flex align-items-start">
-                    <div class="w-25">
-                        <div class="p-1 rounded-circle overflow-hidden border border-dark border-4">
-                        	<img class="w-100" src="./assests/images/icons/<?php echo $featuer[0] ?>">
+        <div>
+            <div class="py-5 mb-3  border-5 border-top border-dark">
+                <h2 class="display-5 fw-bold text-uppercase fw-bold text-center"><?php echo $content[$lang]["featuers"][0] ?></h2>
+            </div>
+            <div class="bg-dark">
+                <div class="container mx-auto py-5 row g-4 row-cols-1 row-cols-lg-3">
+                    <?php foreach($content[$lang]["featuers"][1] as $featuer): ?>
+                        <div class="col d-flex align-items-start">
+                            <div class="w-25">
+                                <div class="p-1 rounded-circle overflow-hidden bg-light border-4">
+                                    <img class="w-100 p-2" src="./assests/images/icons/<?php echo $featuer[0] ?>">
+                                </div>
+                            </div>
+                            <div class="ms-3 w-75">
+                                <h2 class="text-light"><?php echo $featuer[1] ?></h2>
+                                <p class="text-light lead fs-6"><?php echo $featuer[2] ?></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="ms-3 w-75">
-                        <h2><?php echo $featuer[1] ?></h2>
-                        <p class="lead fs-6"><?php echo $featuer[2] ?></p>
-                    </div>
+                    <?php endforeach ?>
+                
                 </div>
-            <?php endforeach ?>
-        
+            </div>
         </div>
-    </div>
+    
 </article>
 
 <article> 
-    <div class="container mb-5">
-        <h2 class="text-center  mb-4 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
+    <div class="mb-5">
+        <h2 class="text-center  my-5 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
 		<div class="bg-dark p-4">
-			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<?php for($i = 1;$i<count($content[$lang]["portfolio"]);$i++): ?>
 						<figcaption class="carousel-item text-center <?php if($i==1){echo "active";}?>">
@@ -149,44 +154,48 @@ include "./inc/frontend/templates/header.php"
 </article>
 
 <article>
-    <div class="container mb-5">
-            <h2 class="text-center my-5 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["contact"][0] ?></h2>
-			<div class="d-flex flex-md-row flex-column gap-5" >
-				<section class="w-100">
-					<form action="./" method="POST">
-						<div>
-							<div class="input-group flex-nowrap mb-2">
-								<input name="name" type="text" class="form-control" placeholder="<?php echo $content[$lang]["contact"][1][0] ?>" aria-label="<?php echo $content[$lang]["contact"][1][0] ?>" aria-describedby="addon-wrapping">
-								<input name="phone" type="text" class="form-control" placeholder="<?php echo $content[$lang]["contact"][1][1] ?>" aria-label="<?php echo $content[$lang]["contact"][1][1] ?>" aria-describedby="addon-wrapping">
-							</div>
-							<?php echo $errors["name"] . $errors["phone"]; ?>
-							<input name="email" type="text" class="form-control mb-2" placeholder="<?php echo $content[$lang]["contact"][1][2] ?>" aria-label="<?php echo $content[$lang]["contact"][1][2] ?>" aria-describedby="addon-wrapping">
-							<?php echo $errors["email"]; ?>
-							<select name="option" class="form-select mb-2" id="inputGroupSelect01">
-								<option selected value="Creat design"><?php echo $content[$lang]["contact"][1][3][0] ?></option>
-								<option value="Coding"><?php echo $content[$lang]["contact"][1][3][1] ?></option>
-								<option value="Securing"><?php echo $content[$lang]["contact"][1][3][2] ?></option>
-								<option value="Custom"><?php echo $content[$lang]["contact"][1][3][3] ?></option>
-							</select>
-							<div class="form-floating mb-2">
-								<textarea name="message" class="form-control" placeholder="Leave a comment here" id="Textarea" style="height: 100px"></textarea>
-								<label for="Textarea"><?php echo $content[$lang]["contact"][1][4] ?></label>
-								<?php echo $errors["message"]; ?>
-							</div>
-							<div class="d-grid">
-								<input name="send" class="btn btn-dark fw-bold" value="<?php echo $content[$lang]["contact"][1][5] ?>" type="submit">
-							</div>
-						</div>
-					</form>
-				</section>
-				<section class="w-100">
-					<div class="row row-cols-3 g-5">
-						<?php foreach($content[$lang]["contact"][2] as $media): ?>
-								<div class="col d-flex justify-content-center"><img src="./assests/images/icons/<?php echo $media ?>" alt=""></div>
-						<?php endforeach ?>
-					</div>
-				</section>
-			</div>
+    <div class="mb-5">
+            <div class="py-5 border-5 border-top border-dark">
+                <h2 class="text-center display-5 fw-bold text-uppercase"><?php echo $content[$lang]["contact"][0] ?></h2>
+            </div>
+            <div class="bg-dark py-5">
+                <div class="container d-flex flex-md-row flex-column gap-5" >
+                    <section class="w-100">
+                        <form action="./" method="POST">
+                            <div>
+                                <div class="input-group flex-nowrap mb-2">
+                                    <input name="name" type="text" class="form-control" placeholder="<?php echo $content[$lang]["contact"][1][0] ?>" aria-label="<?php echo $content[$lang]["contact"][1][0] ?>" aria-describedby="addon-wrapping">
+                                    <input name="phone" type="text" class="form-control" placeholder="<?php echo $content[$lang]["contact"][1][1] ?>" aria-label="<?php echo $content[$lang]["contact"][1][1] ?>" aria-describedby="addon-wrapping">
+                                </div>
+                                <?php echo $errors["name"] . $errors["phone"]; ?>
+                                <input name="email" type="text" class="form-control mb-2" placeholder="<?php echo $content[$lang]["contact"][1][2] ?>" aria-label="<?php echo $content[$lang]["contact"][1][2] ?>" aria-describedby="addon-wrapping">
+                                <?php echo $errors["email"]; ?>
+                                <select name="option" class="form-select mb-2" id="inputGroupSelect01">
+                                    <option selected value="Creat design"><?php echo $content[$lang]["contact"][1][3][0] ?></option>
+                                    <option value="Coding"><?php echo $content[$lang]["contact"][1][3][1] ?></option>
+                                    <option value="Securing"><?php echo $content[$lang]["contact"][1][3][2] ?></option>
+                                    <option value="Custom"><?php echo $content[$lang]["contact"][1][3][3] ?></option>
+                                </select>
+                                <div class="form-floating mb-2">
+                                    <textarea name="message" class="form-control" placeholder="Leave a comment here" id="Textarea" style="height: 100px"></textarea>
+                                    <label for="Textarea"><?php echo $content[$lang]["contact"][1][4] ?></label>
+                                    <?php echo $errors["message"]; ?>
+                                </div>
+                                <div class="d-grid">
+                                    <input name="send" class="btn btn-outline-light border-2 fw-bold" value="<?php echo $content[$lang]["contact"][1][5] ?>" type="submit">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="w-100">
+                        <div class="row row-cols-3 g-5">
+                            <?php foreach($content[$lang]["contact"][2] as $media): ?>
+                                    <div class="col d-flex justify-content-center"><img src="./assests/images/icons/<?php echo $media ?>" alt=""></div>
+                            <?php endforeach ?>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </article>
@@ -229,7 +238,7 @@ include "./inc/frontend/templates/header.php"
 		
 		<div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
 			<figure class=""><img width="250px" src="./assests/images/phone/Device.png" alt="..."></figure>
-			<div class="">
+			<div class="mb-5">
 				<p class="lead fw-normal fs-4 mb-4"><?php echo $content[$lang]["policies"][1][0] ?></p>
 				<ul>
 					<li class="mb-2 lead ms-5"><?php echo $content[$lang]["policies"][1][1] ?></li>

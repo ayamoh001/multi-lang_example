@@ -14,11 +14,11 @@ $errors=[
 ];
 
 if(isset($_POST["send"])){
-    $name=$_POST["name"];
-    $phone=$_POST["phone"];
-    $email=$_POST["email"];
-    $option=$_POST["option"];
-    $message=$_POST["message"];
+    $name=mysqli_real_escape_string($conn,$_POST["name"]);
+    $phone=mysqli_real_escape_string($conn,$_POST["phone"]);
+    $email=mysqli_real_escape_string($conn,$_POST["email"]);
+    $option=mysqli_real_escape_string($conn,$_POST["option"]);
+    $message=mysqli_real_escape_string($conn,$_POST["message"]);
 
     if(empty($name)){$errors["name"]="The name shouldn't be empty.";}
     if(empty($phone)){$phone="None";}
