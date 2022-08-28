@@ -11,109 +11,70 @@ $content = [
             "تواصل",
             "أعمالي"
         ],
-        "featuers" => [
+        "features" => [
             "ما المميز؟",
             [
                 [
-                    "seo.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "SEO",
+                    "أرشفة الموقع على محركات البحث, وظبطه لتصدر النتائج واستعراض المحتوى معها."
                 ],
                 [
-                    "security_001.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "متعدد اللغات",
+                    "موقع متعدد اللغات بترجمة يدوية ومؤرشفة على محركات البحث"
                 ],
                 [
-                    "review.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "الأمان",
+                    "تأمين الموقع من أكثر من 12 هجوما الكترونيا وتشفير المعلومات والقواعد."
                 ],
                 [
-                    "speed.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "المعاينة",
+                    "معاينة الموقع بشكل مباشر خلال كل مرحلة من مراحل التطوير."
                 ],
                 [
-                    "licens.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "الآداء والسرعة",
+                    "سرعة في التحميل والتجاوب, واستهلاك أقل للبيانات والموارد, والوصول الى +95 في اختبارات الآداء."
                 ],
                 [
-                    "responsive.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "تصميم متجاوب",
+                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهر يناسب كل الحالات"
                 ],
                 [
-                    "ai.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "موقع ذكي",
+                    "التعرف على دولة الزآئر وتوجيهه للخدمة واللغة المناسبة, وتفعيل النمط الليلي عند الاستخدام"
                 ],
                 [
-                    "contract.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "عقد إلكتروني",
+                    "عقد إلكتروني معتمد قانونيا لحفظ حقوق جميع الأطراف وتوضيح الأسعار."
                 ],
                 [
-                    "security_002.png",
-                    "تصميم متوافق",
-                    "موقع يمكنه التأقلم مع جميع القياسات والشاشات والظهور بمظهري يناسب كل الحالات"
+                    "الترخيص القانوني",
+                    "موقع مرخص ويتبع جميع القوانين الدولية ويلتزم بجميع الحقوق.",
                 ]
+                
             ]
         ],
-        "portfolio" => [
-            "أعمالي",
-            [
-                "statistic.svg",
-                "نبذة عن المشروع",
-                "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
-                "زيارة/معاينة"
-            ],
-            [
-                "modern.svg",
-                "نبذة عن المشروع",
-                "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
-                "زيارة/معاينة"
-            ],
-            [
-                "financial.svg",
-                "نبذة عن المشروع",
-                "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
-                "زيارة/معاينة"
-            ],
-            [
-                "books.svg",
-                "نبذة عن المشروع",
-                "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
-                "زيارة/معاينة"
-            ],
-            [
-                "social.svg",
-                "نبذة عن المشروع",
-                "موقع 'جليدي' هو متجر إلكتروني متخصص في بيع الأجهزة الالكترونية وإكسسوارات الكمبيوتر",
-                "زيارة/معاينة"
-            ]
+        "portfolio" => [ //not working right now
+            "أعمالي"
         ],
         "services" => [
             "الخدمات",
             [
-                "designing.png",
-                "التصميم",
-                "تصميم وهندسة بنية الموقع وكامل الهوية البصرية للمقاولة",
-                "100$"
-            ],
-            [
-                "coding.webp",
-                "التطوير",
-                "تحويل تصميم جرافيك إلى موقع تفاعلي أو إعادة برمجة موقع قديم",
-                "100$"
-            ],
-            [
-                "securing.jpg",
-                "التأمين",
-                "تأمين الموقع من أكثر من 12 هجوم إلكترونيا",
-                "100$"
-            ],
+                [
+                    "التصميم",
+                    "تصميم وهندسة بنية الموقع وكامل الهوية البصرية للمقاولة",
+                    "100$"
+                ],
+                [
+                    "التطوير",
+                    "تحويل تصميم جرافيك إلى موقع تفاعلي أو إعادة برمجة موقع قديم",
+                    "100$"
+                ],
+                [
+                    "التأمين",
+                    "تأمين الموقع من أكثر من 12 هجوم إلكترونيا",
+                    "100$"
+                ]
+            ]
         ],
         "rates" => [
             "آراء العملاء"
@@ -132,26 +93,13 @@ $content = [
                 ],
                 "الرسالة",
                 "ارسال"
-            ],
-            [
-                "twitter.png",
-                "telegram.png",
-                "facebook.png",
-                "whatsapp.png",
-                "instagram.png",
-                "behance.png",
-                "youtube.png",
-                "messanger.png",
-                "pentrist.png"
             ]
-
         ],
         "about" => [
             "حولي",
             "اسمي هو محمد أياو وانا مصمم جرافيك ومطور مواقع إنترنت من مدينة تزنيت بالمغرب, ويمكنك تصفح أعمالي أو التواصل معي مباشرة, اسمي هو محمد أياو وانا مصمم جرافيك ومطور مواقع إنترنت من مدينة تزنيت بالمغرب, ويمكنك تصفح أعمالي أو التواصل معي مباشرة ",
             "رؤية CV"
         ],
-        "blog" => "",
         "policies" => [
             "سياسات الدفع والتعاقد",
             [
@@ -169,103 +117,70 @@ $content = [
             "Contact",
             "Portfolio"
         ],
-        "featuers" => [
+        "features" => [
             "What is special?",
             [
                 [
-                    "seo.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "SEO",
+                    "Archiving your site on search engins with optimazation for hiegh ranking and displayed content in the results."
                 ],
                 [
-                    "speed.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Languages",
+                    "Multi languages website with manual translation that is archived on the search engins."
                 ],
                 [
-                    "responsive.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Security",
+                    "Serving the site via SSl connection and securing it from more then 12 web attacks with hashed data."
                 ],
                 [
-                    "security_001.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Live Review",
+                    "Watch your webiste working while its building instead of just watching a pictures."
                 ],
                 [
-                    "security_002.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Performance",
+                    "Fast loading speed with optimaized & zipped resourses and SSR and "
                 ],
                 [
-                    "contract.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Responsivity",
+                    "Responsive webiste with friendly UI/UX for all devices users."
                 ],
                 [
-                    "consulting.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Intellingence",
+                    "Auto detecting the regions of the users and redirect them to the suit page and options."
                 ],
                 [
-                    "ai.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "E-Contract",
+                    "Electronic contract for explaining prices and deadlines, and to save rights."
                 ],
                 [
-                    "review.png",
-                    "UI/UX",
-                    "A clear and modern designe with the academic ui/ux's rules."
+                    "Licences",
+                    "legall website with all licences provided to secure cliet's rights.",
                 ]
             ]
         ],
-        "portfolio" => [
-            "My Portfolio",
-            [
-                "test.svg",
-                "About The Project",
-                "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
-                "Visit/Preview"
-            ],
-            [
-                "test.svg",
-                "About The Project",
-                "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
-                "Visit/Preview"
-            ],
-            [
-                "test.svg",
-                "About The Project",
-                "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
-                "Visit/Preview"
-            ],
-            [
-                "test.svg",
-                "About The Project",
-                "'JELLEED' website is an ecommerce site for selling elecctronincs and accessories.",
-                "Visit/Preview"
-            ]
+        "portfolio" => [ //not working right now.
+            "My Portfolio"
         ],
         "services" => [
             "Services",
             [
-                "designing.png",
-                "Designing",
-                "Desinging and palnning the sturcture of the site with all of it visual identity.",
-                "100$"
-            ],
-            [
-                "coding.webp",
-                "Developing",
-                "Converting the graphical design to a real interactive website.",
-                "100$"
-            ],
-            [
-                "securing.jpg",
-                "securing",
-                "Securing your website from more than 12+ web attacks",
-                "100$"
-            ],
+
+                [
+                    "Designing",
+                    "Desinging and palnning the sturcture of the site with all of it visual identity.",
+                    "100$"
+                ],
+                [
+                    "Developing",
+                    "Converting the graphical design to a real interactive website.",
+                    "100$"
+                ],
+                [
+                    "securing",
+                    "Securing your website from more than 12+ web attacks",
+                    "100$"
+                ]
+            ]
         ],
         "rates" => [
             "Clients' Rates"
@@ -284,17 +199,6 @@ $content = [
                 ],
                 "The Message",
                 "Send"
-            ],
-            [
-                "twitter.png",
-                "telegram.png",
-                "facebook.png",
-                "whatsapp.png",
-                "instagram.png",
-                "behance.png",
-                "youtube.png",
-                "messanger.png",
-                "pentrist.png"
             ]
         ],
         "about" => [
@@ -302,7 +206,6 @@ $content = [
             "My name is Mohamed Ayaou and I am a self-thought web and graphic designer from Morroco, You can take a look on my porfolio or contact me directly.My name is Mohamed Ayaou and I am a self-thought web and graphic designer from Morroco, You can take a look on my porfolio or contact me directly.",
             "MY CV"
         ],
-        "blog" => "",
         "policies" => [
             "Payment & Contarcting Policies",
             [

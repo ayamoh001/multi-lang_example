@@ -1,11 +1,26 @@
 <?php
 $header=[
     "ar"=>[
-        ["الرئيسية","أعمالي","الخدمات","التقييمات","التواصل","حولي","الدفع والتعاقد"],
+        [
+            "الرئيسية",
+            "أعمالي",
+            "الخدمات",
+            "التقييمات",
+            "التواصل",
+            "حولي",
+            "السياسات"
+        ],
         "English"
     ],
     "en"=>[
-        ["Home","Portfolio","Services","Rates","Contact","About","Contract & payment"],
+        [
+            "Home",
+            "Portfolio",
+            "Services",
+            "Rates",
+            "Contact",
+            "About",
+            "Policies"],
         "العربية"
     ]
 ];
@@ -14,30 +29,30 @@ $footer=[
         "اسمي هو محمد أياو وانا مصمم جرافيك ومطور مواقع إنترنت من مدينة تزنيت بالمغرب, ويمكنك تصفح أعمالي أو التواصل معي مباشرة",
         [
             [
-                "القسم",
+                "الأقسام",
                 [
-                    "رابط 1",
-                    "رابط 2",
-                    "رابط 3",
-                    "رابط 4"
+                    "الرئيسية",
+                    "الأعمال",
+                    "الخدمات",
+                    "التقييمات"
                 ]
             ],
             [
-                "القسم",
+                "المعلومات",
                 [
-                    "رابط 1",
-                    "رابط 2",
-                    "رابط 3",
-                    "رابط 4"
+                    "حولي",
+                    "التراخيص",
+                    "االعنوان",
+                    "السيرة الذاتية"
                 ]
             ],
             [
-                "القسم",
+                "التواصل",
                 [
-                    "رابط 1",
-                    "رابط 2",
-                    "رابط 3",
-                    "رابط 4"
+                    "ma-web.epizy.com",
+                    "ayamoh001@gmail.com",
+                    "+212-608-671-716",
+                    "المزيد"
                 ]
             ]
         ]
@@ -46,31 +61,34 @@ $footer=[
         "My name is Mohamed Ayaou and I am a self-thought web and graphic designer from Morroco, You can take a look on my porfolio or contact me directly.",
         [
             [
-                "Section",
+                "sections",
                 [
-                    "Link 1",
-                    "Link 2",
-                    "Link 3",
-                    "Link 4"
+                    "Home",
+                    "Portfolio",
+                    "Services",
+                    "Rates",
+                    "Policies"
                 ]
             ],
             [
-                "Section",
+                "Informations",
                 [
-                    "Link 1",
-                    "Link 2",
-                    "Link 3",
-                    "Link 4"
+                    "About Me",
+                    "Licences",
+                    "Address",
+                    "My CV"
                 ]
-            ],[
-                "Section",
+            ],
+            [
+                "Contact",
                 [
-                    "Link 1",
-                    "Link 2",
-                    "Link 3",
-                    "Link 4"
+                    "ma-web.epizy.com",
+                    "ayamoh001@gmail.com",
+                    "+212-608-671-716",
+                    "More"
                 ]
             ]
         ]
     ]
 ];
+

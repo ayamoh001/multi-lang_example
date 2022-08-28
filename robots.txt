@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ma-web.epizy.com/maweb-test/sitemap.xml
+
+google-site-verification=e1YwYcZRdvWU-eeyUK9m9T8ZXTpX7tFu82JKdvMFUQQ
