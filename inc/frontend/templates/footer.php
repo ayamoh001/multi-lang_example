@@ -34,7 +34,7 @@
 </footer>
 </main>
 
-    <script src="./assests/js/bootstrap.bundle.min.js"></script>
-    <script src="./assests/js/main.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

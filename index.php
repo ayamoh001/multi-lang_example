@@ -16,7 +16,7 @@ include "./inc/frontend/templates/header.php"
         <div class="row flex-lg-row-reverse flex-lg-nowrap justify-content-center align-items-center gap-lg-5 gap-3 py-5">
             <section class="col-10 col-sm-10 col-lg-6">
                 <figure>
-                    <img src="./assests/images/me/me.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img src="./assets/images/me/me.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </figure>
             </section>
             <section class="col-lg-6 my-0">
@@ -59,15 +59,46 @@ include "./inc/frontend/templates/header.php"
 </article>
 
 <article id="portfolio"> 
-    <div>
-        <h2 class="text-center m-0 py-5 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
+    <h2 class="text-center m-0 py-5 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
+    <div class="bg-dark p-lg-5 py-3">
+        <div class="container">
+            <div id="carousel" class="container carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next opacity-100" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <?php $works =["test_001.jpg","test_002.jpg","test_003.jpg","test_004.jpg","test_005.jpg"]; 
+                        for($i = 0;$i<count($works);$i++): ?>
+                            <div class="carousel-item <?php if($i==0){echo "active";}?>">
+                                <img src="./assets/images/portfolio/<?php echo $works[$i] ?>" class="d-block w-100" alt="...">
+                            </div>
+                    <?php endfor ?>
+                </div>
+                <div class="carousel-indicators position-relative m-0 my-1 overflow-scroll">
+                    <?php $works =["test_001.jpg","test_002.jpg","test_003.jpg","test_004.jpg","test_005.jpg"]; 
+                        for($i = 0;$i<count($works);$i++): ?>
+                            <img src="./assets/images/portfolio/<?php echo $works[$i] ?>" type="button" data-bs-target="#carousel" data-bs-slide-to="<?php echo $i ?>" class="<?php if($i==0){echo "active";}?> position-relative border-0 w-25 h-100 " aria-current="true" aria-label="Slide <?php echo $i ?>">
+                            </img>
+                    <?php endfor ?>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <div>
+        <!-- <h2 class="text-center m-0 py-5 display-5 fw-bold text-uppercase"><?php echo $content[$lang]["portfolio"][0] ?></h2>
         <div class="bg-dark p-lg-5 py-3">
             <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php $works =["test_001.jpg","test_002.jpg","test_003.jpg","test_004.jpg","test_005.jpg"]; 
                     for($i = 0;$i<count($works);$i++): ?>
                         <figcaption class="carousel-item text-center <?php if($i==0){echo "active";}?>">
-                            <img class="bg-dark w-100" src="./assests/images/portfolio/<?php echo $works[$i] ?>" class="d-block w-100" alt="...">
+                            <img class="bg-dark w-100" src="./assets/images/portfolio/<?php echo $works[$i] ?>" class="d-block w-100" alt="...">
                         </figcaption>
                     <?php endfor ?>
                     <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -79,16 +110,16 @@ include "./inc/frontend/templates/header.php"
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="carousel-indicators position-relative m-0 ">
+                <div class="carousel-indicators position-relative m-0 mt-3 overflow-scroll">
                     <?php for($i = 0;$i<count($works);$i++): ?>
-                        <div class="ratio ratio-16x9">
-                            <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?php echo $i-1 ?>" class="<?php if($i==0){echo "active";}?> border-0 h-100 w-100 m-0" aria-current="<?php if($i==0){echo "true";}?>" aria-label="Slide <?php echo $i?>" src="./assests/images/portfolio/<?php echo $works[$i] ?>">
+                        <div class="ratio w-25 ratio-16x9">
+                            <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?php echo $i-1 ?>" class="<?php if($i==0){echo "active";}?> border-0 h-100 w-100 m-0" aria-current="<?php if($i==0){echo "true";}?>" aria-label="Slide <?php echo $i?>" src="./assets/images/portfolio/<?php echo $works[$i] ?>">
                         </div>
                     <?php endfor ?>
                 </div>
                 
             </div>
-        </div>
+        </div> -->
     </div>
 </article>
 
@@ -100,7 +131,7 @@ include "./inc/frontend/templates/header.php"
             for($i = 0;$i<count($services);$i++): ?>
                 <div class="col">
                     <div class="card mb-4 rounded-3 overflow-hidden h-100 shadow-sm">
-                        <img class="h-100 ratio-1x1" src="./assests/images/services/<?php echo $services[$i] ?>" alt="">
+                        <img class="h-100 ratio-1x1" src="./assets/images/services/<?php echo $services[$i] ?>" alt="">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <h1 class="card-title pricing-card-title"><?php echo $content[$lang]["services"][1][$i][0] ?></small></h1>
                             <p class="mt-3 mb-4"><?php echo $content[$lang]["services"][1][$i][1] ?></p>
@@ -127,7 +158,7 @@ include "./inc/frontend/templates/header.php"
 
                                 <div class="d-flex gap-4 "> 
                                     <div class="ratio ratio-1x1  w-25">
-                                        <img src="./assests/images/clients/client_001.jpg" class="card-img-top rounded-circle img-fluid" alt="...">
+                                        <img src="./assets/images/clients/client_001.jpg" class="card-img-top rounded-circle img-fluid" alt="...">
                                     </div>
                                     <div class="w-75">
                                         <h4 class="text-nowrap"><?php echo $rate[1] ?></h4>
@@ -187,7 +218,7 @@ include "./inc/frontend/templates/header.php"
                         <div class="row row-cols-3 g-5">
                             <?php $media =["twitter.png","telegram.png","facebook.png","whatsapp.png","instagram.png","behance.png","youtube.png","messanger.png","pentrist.png"];
                             foreach($media as $m): ?>
-                                    <div class="col d-flex justify-content-center"><img src="./assests/images/icons/<?php echo $m ?>" alt=""></div>
+                                    <div class="col d-flex justify-content-center"><img src="./assets/images/icons/<?php echo $m ?>" alt=""></div>
                             <?php endforeach ?>
                         </div>
                     </section>
@@ -203,7 +234,7 @@ include "./inc/frontend/templates/header.php"
         <div class="row py-5 g-5 overflow-hidden align-items-center justify-content-center">
             <div class="col-10 col-md-6 ">
                 <figure >
-                    <img src="./assests/images/me/me.png" class="w-100" alt="...">
+                    <img src="./assets/images/me/me.png" class="w-100" alt="...">
                 </figure>
             </div>
             <div class="col-12 col-md-6">
@@ -224,7 +255,7 @@ include "./inc/frontend/templates/header.php"
         <h2 class="h1 text-center py-5"><?php echo $content[$lang]["policies"][0] ?></h2>
         
         <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
-            <figure class=""><img width="250px" src="./assests/images/phone/Device.png" alt="..."></figure>
+            <figure class=""><img width="250px" src="./assets/images/phone/Device.png" alt="..."></figure>
             <div class="mb-5">
                 <p class="lead fw-normal fs-4 mb-4"><?php echo $content[$lang]["policies"][1][0] ?></p>
                 <ul>

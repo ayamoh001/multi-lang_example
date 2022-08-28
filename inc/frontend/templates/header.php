@@ -13,12 +13,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar" content="..." />
     <meta name="theme-color" content="...">
-    <meta rel="apple-touch-icon" href="./assests/images/logo_icons/192.png">
+    <meta rel="apple-touch-icon" href="./assets/images/logo_icons/192.png">
     <link rel="manifest" href="manifest.json">
     
-    <link rel="icon" href="./assests/images/logo_icons/192.png">
-    <link rel="stylesheet" href="./assests/css/bootstrap<?php echo ($lang=="ar") ? ".rtl" : "" ;?>.min.css">
-    <!-- <link rel="stylesheet" href="./assests/css/bootstrap-icons.css"> -->
+    <link rel="icon" href="./assets/images/logo_icons/192.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap<?php echo ($lang=="ar") ? ".rtl" : "" ;?>.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title><?php echo $title[$lang] ?></title>
 </head>
